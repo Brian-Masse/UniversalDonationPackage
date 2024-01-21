@@ -1,0 +1,112 @@
+{
+  "identifier" : "0E296ACA",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "5.99",
+      "familyShareable" : false,
+      "internalID" : "89ED39D0",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Large Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "donation.largeCoffee",
+      "referenceName" : "largeCoffee",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "3.99",
+      "familyShareable" : false,
+      "internalID" : "D6D18145",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Medium Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "donation.mediumCoffee",
+      "referenceName" : "mediumCoffee",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "F6DACA66",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Small Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "donation.smallCoffee",
+      "referenceName" : "smallCoffee",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

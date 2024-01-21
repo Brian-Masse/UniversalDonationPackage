@@ -15,12 +15,16 @@ public class StoreKitManager: ObservableObject {
     @Published private(set) var coffees: [Product] = []
     @Published private(set) var purchasedCoffees: [Product] = []
     
-    private var productDic: Dictionary<String, String> = [:]
+    private var productDic: Dictionary<String, String> = [
+        "smallCoffee": "donation.smallCoffee",
+        "mediumCoffee": "donation.mediumCoffee",
+        "largeCoffee": "donation.largeCoffee"
+        ]
     
     var updateListenerTask: Task<Void, Error>? = nil
     
     public init() {
-        readPropertyList()
+//        readPropertyList()
         
         Task { await requestProducts() }
         

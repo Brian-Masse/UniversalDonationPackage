@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "uiuniversals",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Brian-Masse/UIUniversals",
+      "state" : {
+        "revision" : "dc0c47351c2035082325e2691a9944e9e86684fe",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -96,7 +96,7 @@ public struct DonationView: View {
             .padding(.leading)
             .padding(.trailing, 30)
             
-            Image("headShot")
+            universalImage("headShot")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 200)
@@ -215,7 +215,7 @@ public struct DonationView: View {
     private func makeAppPreview(_ app: Social) -> some View {
         HStack {
          
-            Image( app.icon )
+            universalImage( app.icon )
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 100, height: 100)
@@ -272,4 +272,13 @@ public struct DonationView: View {
         }
         .universalBackground()
     }
+}
+
+//MARK: UniversalImage
+@available(iOS 15.0, *)
+public func universalImage(_ name: String) -> Image {
+    if let UIImage = UIImage(named: name, in: .module, with: nil) {
+        return Image(uiImage: UIImage )
+    }
+    return Image( "papernoise" )
 }

@@ -245,7 +245,7 @@ public struct DonationView: View {
 //    MARK: Body
     public var body: some View {
         GeometryReader { geo in
-            ScrollReader($scrollPosition) {
+            ScrollReader($scrollPosition, showingIndicator: false) {
                 VStack(alignment: .leading) {
                     
                     makeHeader()

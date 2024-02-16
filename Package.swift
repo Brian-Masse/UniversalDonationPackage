@@ -12,7 +12,7 @@ let package = Package(
             targets: ["UniversalDonationPackage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Brian-Masse/UIUniversals", from: "1.0.1")
+        .package(url: "https://github.com/Brian-Masse/UIUniversals", from: "1.0.4")
     ],
     
     targets: [

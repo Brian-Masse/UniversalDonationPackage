@@ -84,9 +84,7 @@ public struct DonationView: View {
             UniversalText("About Me: \nBrian Masse",
                           size: Constants.UIMainHeaderTextSize,
                           font: Constants.titleFont,
-                          case: .uppercase,
-                          wrap: false,
-                          scale: true)
+                          case: .uppercase)
             
             UniversalText( aboutMeText,
                            size: Constants.UISmallTextSize,
@@ -226,13 +224,13 @@ public struct DonationView: View {
             
             Spacer()
             
-            LargeRoundedButton("", icon: "arrow.forward", style: .primary) {
+            LargeRoundedButton("", icon: "arrow.forward", foregroundColor: nil, style: .primary) {
                 guard let url = URL(string: app.url) else { return }
                 
                 UIApplication.shared.open(url)
             }
-            .shadow(color: .black.opacity(0.2), radius: 10, y: 5)
             .universalTextStyle()
+            .shadow(color: .black.opacity(0.2), radius: 10, y: 5)
         }
         .padding(.trailing, 7)
         .rectangularBackground(5, style: .secondary)

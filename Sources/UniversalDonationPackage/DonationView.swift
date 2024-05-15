@@ -86,8 +86,7 @@ public struct DonationView: View {
                           font: Constants.titleFont,
                           case: .uppercase,
                           wrap: false,
-                          scale: true,
-                          lineSpacing: -25)
+                          scale: true)
             
             UniversalText( aboutMeText,
                            size: Constants.UISmallTextSize,
@@ -146,7 +145,6 @@ public struct DonationView: View {
             LargeRoundedButton("", icon: "arrow.forward", style: .accent) {
                 Task { await buyCofffee(product) }
             }
-            .foregroundStyle(.black)
             .shadow(color: .black.opacity(0.2), radius: 10, y: 5)
         }
         .rectangularBackground(style: .secondary)
